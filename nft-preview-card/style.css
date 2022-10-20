@@ -1,0 +1,117 @@
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 1.5rem;
+  max-width: 300px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 12px;
+}
+
+.bg {
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 10px;
+}
+
+.bg > img {
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.bg > img:hover {
+  opacity: 0.6;
+  background-image: url("./images/icon-view.svg");
+}
+
+.card h1 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card h1:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.card > p {
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: hsl(215, 22%, 63%);
+}
+
+.infocard,
+.infocard div,
+.creator {
+  display: flex;
+}
+
+.infocard {
+  margin-top: 1.5rem;
+  justify-content: space-between;
+}
+
+.infocard div {
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.infocard div:nth-child(1) {
+  color: hsl(178, 100%, 50%);
+}
+
+.infocard div:nth-child(2) {
+  font-weight: 400;
+  color: hsl(215, 22%, 63%);
+}
+
+.line {
+  margin-top: 1rem;
+  height: 1px;
+  width: 100%;
+  background-color: hsl(215, 32%, 27%);
+}
+
+.creator {
+  margin-top: 1rem;
+  display: felx;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 300;
+}
+
+.creator img {
+  width: 24px;
+  height: 24px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+.creator p {
+  color: hsl(215, 22%, 63%);
+}
+
+.creator p span {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.creator p span:hover {
+  color: hsl(178, 100%, 50%);
+}
